@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp"
+    android:layout_margin="8dp"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/row_image_grid"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center|start"
+            />
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:layout_gravity="center|start"
+
+            >
+            <TextView
+                android:layout_weight="2.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/row_title"
+                android:textSize="16sp"
+                android:layout_gravity="start|center"
+                android:maxLines="1"
+                 android:textColor="@color/colorPrimaryDark"
+                android:text="title"
+                />
+
+            <TextView
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:id="@+id/row_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:maxLines="3"
+android:visibility="gone"
+
+                />
+
+            <TextView
+                android:id="@+id/save_to_read"
+                android:gravity="center"
+                android:layout_gravity="end|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اقرأ لاحقا"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/ic_study"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
